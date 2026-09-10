@@ -17,8 +17,8 @@
 /* 
       02 COLORS:
 
-      MAIN COLOR: #087f5b
-      GREY COLOR: #343a40
+      MAIN COLOR: #0B1220
+      GREY COLOR: #fff
 
        -primary : #e67e22
        -tints : #fae5d3
@@ -44,6 +44,7 @@ use colors.co for contrasts(to check contrasts
       */
 html {
   font-size: 62.5%;
+  background-color: #0b1220;
   /* font-size: 20px; */
   /* better way */
   /* or percentage of users browser font size setting  */
@@ -54,22 +55,25 @@ html {
 ----------------------------------------------*/
 header {
   display: flex;
-  margin-top: 4.8rem;
-  margin-left: 4.8rem;
+  margin-top: 2rem;
+  border-bottom: solid 1px grey;
 }
 header div {
   display: flex;
   align-items: center;
 }
 .weathergpt-logo {
-  height: 6rem;
-  width: 8rem;
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 4.8rem;
 }
 .main-nav ul {
   display: flex;
   list-style: none;
   /* align-items: center; */
   margin-left: 12.8rem;
+  color: #fff;
 }
 .main-nav ul li {
   display: flex;
@@ -78,11 +82,13 @@ header div {
 .arrow-icon {
   width: 2rem;
   height: 2rem;
+  color: #fff;
 }
 .secondary-nav ul {
   display: flex;
   list-style: none;
   margin-left: 12.8rem;
+  color: #fff;
 }
 .hero-section {
   position: relative;
@@ -93,17 +99,18 @@ header div {
 .hero-bg {
   position: absolute;
   inset: 0;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.7;
+  left: 20%;
 }
 
 .hero-content {
   color: #fff;
   position: relative;
-  z-index: 1;
-  font-size: 5.2rem;
+  font-size: 9.6rem;
+  line-height: 16rem;
   display: flex;
   justify-content: center;
 }
