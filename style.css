@@ -16,16 +16,13 @@
     1.06
 /* 
       02 COLORS:
-
-      MAIN COLOR: #F7F8F5
+      BG COLOR : #FDFEE3
       GREY COLOR: #202427
 
-       -primary : #152B3A
-       -tints : #2D6A62
-       -shades : 
-       -accent : #DCEDE7
-       -greys : 
-       #555
+       -primary : #31343B
+       -tints : #D3E6BA
+       -shades : #465E4A
+       -accent : #4F7954
 
        03SHADOWS :
 
@@ -44,7 +41,7 @@ use colors.co for contrasts(to check contrasts
       */
 html {
   font-size: 62.5%;
-  background-color: #f7f8f5;
+  background-color: #fdfee3;
   /* font-size: 20px; */
   /* better way */
   /* or percentage of users browser font size setting  */
@@ -61,12 +58,13 @@ header {
   align-items: center;
   margin-top: 2rem;
   padding-bottom: 2rem;
-  border-bottom: solid 1px #202427;
   justify-content: space-between;
+  border-bottom: solid 1px #202427;
 }
 header div {
   display: flex;
   align-items: center;
+  margin-left: 3rem;
 }
 /*
 .weathergpt-nav {
@@ -78,20 +76,27 @@ header div {
 .weathergpt-logo {
   height: 4rem;
   width: 4rem;
+  margin-right: 0.5rem;
+}
+.weathergpt-nav {
+  cursor: pointer;
 }
 .weathergpt-nav p {
-  font-size: 1.6rem;
-  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-family: "Instrument Serif", sans-serif;
+  font-weight: 700;
   color: #202427;
 }
 .main-nav ul {
   display: flex;
   list-style: none;
-  margin-left: 12.8rem;
   color: #202427;
 }
 .main-nav ul li {
-  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-right: 2rem;
 }
 .arrow-icon {
   width: 1.6rem;
@@ -101,17 +106,33 @@ header div {
 .secondary-nav ul {
   display: flex;
   list-style: none;
-  font-size: 1.6rem;
+  margin-right: 3rem;
+}
+.secondary-nav ul li {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
   color: #202427;
 }
-
-.hero-content {
-  color: #152b3a;
-  position: relative;
-  font-size: 8.2rem;
-  line-height: 12rem;
-  font-family: "Encode Sans Expanded", sans-serif;
-  font-weight: 800;
+.btn {
+  cursor: pointer;
+  margin-right: 2rem;
+}
+.hero-section-main {
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  color: #31343b;
+  font-size: 8.6rem;
+  line-height: 12rem;
+  font-family: "Instrument Serif", sans-serif;
+  letter-spacing: 0.3rem;
+}
+.header-bold {
+  text-decoration: underline;
+  color: #c2d8a8;
+}
+.hero-img {
+  width: 90rem;
+  height: 50rem;
 }
