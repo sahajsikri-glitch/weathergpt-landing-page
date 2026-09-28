@@ -148,11 +148,7 @@ header div {
   animation: scrollLogos 20s linear infinite;
 }
 .company {
-  flex-shrink: 0;
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-top: 4rem;
-  color: #202427;
+  display: inline-block;
 }
 @keyframes scrollLogos {
   from {
@@ -162,9 +158,11 @@ header div {
     transform: translateX(-50%);
   }
 }
-.company-one {
-  font-family: "Alumni", sans-serif;
+.company-03 {
+  display: flex;
+  align-items: center;
 }
-.company-two {
-  font-family: "Grechen", sans-serif;
+.company-06 {
+  display: flex;
+  align-items: center;
 }
